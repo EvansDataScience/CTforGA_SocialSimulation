@@ -18,14 +18,14 @@
 ;to setup
 ;  ca
 ;  create-people 100  ; explicit language
-;  ask people [set color blue]   ; color the 'people' (not'turle'?)
+;  ask people [set color blue]   ; color the 'people'
 ;  reset-ticks
 ;end
 ;
 ;to simulate
 ;  ask people
 ;  [rt 180 ;angle
-;    fd 1
+;    fd random 5 ; a random value below 5
 ;  ]
 ;  tick
 ;end
@@ -51,7 +51,7 @@
 ;to move ; new subroutine
 ;ask people
 ;  [rt random 360  ; turn random angle
-;   fd random 3]   ; walk random steps ( 0,1,2)
+;   fd random 3]   ; a random value below 3
 ;end
 
 ;******************************** 4
